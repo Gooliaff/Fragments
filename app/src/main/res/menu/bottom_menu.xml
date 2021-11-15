@@ -5,16 +5,20 @@
     android:id="@+id/menu"
     android:enabled="true"
     android:title="@string/menu"
-    android:icon="@drawable/ic_baseline_menu_book_24"
+    android:icon="@drawable/ic_baseline_house_24"
 
     />
 
     <item
         android:id="@+id/about"
-android:title="@string/about"
+  android:title="@string/about"
         android:icon="@drawable/ic_baseline_info_24"
 
         />
-
+<item
+    android:id="@+id/photo"
+    android:title="@string/photo"
+    android:icon="@drawable/ic_baseline_photo_24"
+    />
 
 </menu>

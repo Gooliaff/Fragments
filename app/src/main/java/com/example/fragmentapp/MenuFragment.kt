@@ -19,15 +19,15 @@ private lateinit var aboutButton: Button
 
         val view = inflater.inflate(R.layout.fragment_menu, container, false)
 
-        aboutButton = view.findViewById(R.id.about_button)
+        aboutButton = view.findViewById(R.id.photo_button)
 
         val aboutFragment = AboutFragment()
         aboutButton.setOnClickListener {
 
             activity?.supportFragmentManager
-                ?.beginTransaction()
+               ?.beginTransaction()
                 ?.replace(R.id.fragment_container, aboutFragment)
-                ?.commit()
+               ?.commit()
         }
 
 

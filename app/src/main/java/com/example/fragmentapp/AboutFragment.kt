@@ -6,6 +6,8 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
+import android.content.Intent
+import android.net.Uri
 
 
 class AboutFragment : Fragment() {
@@ -17,14 +19,15 @@ class AboutFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
 val view = inflater.inflate(R.layout.fragment_about,container, false)
-        backButton = view.findViewById(R.id.back_button)
-        val menuFragment=MenuFragment()
-        backButton.setOnClickListener {
-            activity?.supportFragmentManager
-                ?.beginTransaction()
-                ?.replace(R.id.fragment_container, menuFragment)
+       backButton = view.findViewById(R.id.back_button)
+       val menuFragment=MenuFragment()
+       backButton.setOnClickListener {
+           activity?.supportFragmentManager
+               ?.beginTransaction()
+               ?.replace(R.id.fragment_container, menuFragment)
                 ?.commit()
         }
+
 
         return view
     }
