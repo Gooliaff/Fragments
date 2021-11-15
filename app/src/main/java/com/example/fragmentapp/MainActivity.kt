@@ -1,10 +1,9 @@
 package com.example.fragmentapp
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
 import com.google.android.material.bottomnavigation.BottomNavigationView
-import com.google.android.material.navigation.NavigationBarView
 
 private const val LAST_SELECTED_ITEM = "item"
 
@@ -30,6 +29,11 @@ class MainActivity : AppCompatActivity() {
 
                 }
 
+                R.id.photo -> {
+                    val photoFragment = PhotoFragment()
+                    replaceFragment(photoFragment)
+
+                }
             }
             true
 
